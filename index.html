@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suresh Keshwin Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Suresh Keshwin - Undergraduate in Computing and Information Systems at Sabaragamuwa University of Sri Lanka"
+    />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #059669 0%,
+          #10b981 50%,
+          #34d399 100%
+        );
+      }
+
+      .glass-effect {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      }
+
+      .hover-lift {
+        transition: all 0.3s ease;
+      }
+
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-gradient {
+        background: linear-gradient(135deg, #059669, #10b981);
+        transition: all 0.3s ease;
+      }
+
+      .btn-gradient:hover {
+        background: linear-gradient(135deg, #047857, #059669);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(5, 150, 105, 0.4);
+      }
+    </style>
+  </head>
+  <body class="flex min-h-screen flex-col bg-gray-50 font-mono">
+    <!-- ===== HEADER ===== -->
+    <header
+      class="fixed top-0 z-20 flex h-16 w-full px-8 lg:px-16 glass-effect shadow-sm border-b border-gray-200"
+    >
+      <div class="flex w-full max-w-7xl mx-auto items-center justify-between">
+        <a
+          class="text-2xl font-bold text-gray-900 hover:text-green-600 transition-colors"
+          href=""
+        >
+          Suresh Keshwin
+        </a>
+        <nav class="hidden md:flex">
+          <div class="flex gap-8 text-base text-gray-700">
+            <a
+              class="hover:text-green-600 transition-colors font-medium"
+              href="#about"
+            >
+              About Me
+            </a>
+            <a
+              class="hover:text-green-600 transition-colors font-medium"
+              href="#skills"
+            >
+              Skills
+            </a>
+            <a
+              class="hover:text-green-600 transition-colors font-medium"
+              href="#projects"
+            >
+              Projects
+            </a>
+            <a
+              class="hover:text-green-600 transition-colors font-medium"
+              href="#contact"
+            >
+              Contact
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section
+      class="relative flex min-h-screen w-full flex-col overflow-hidden gradient-bg"
+    >
+      <div
+        class="flex h-full w-full items-center justify-center gap-12 p-8 lg:p-16 max-lg:flex-col pt-20"
+      >
+        <div class="flex flex-col justify-center text-white max-w-2xl">
+          <h1
+            class="text-5xl lg:text-7xl font-bold uppercase max-lg:text-4xl leading-tight mb-6"
+          >
+            Hi, I'm <span class="text-green-200">Suresh Keshwin</span>
+          </h1>
+          <h2 class="text-xl lg:text-2xl text-green-100 mb-6 font-light">
+            Undergraduate in Computing and Information Systems <br />
+            Sabaragamuwa University of Sri Lanka
+          </h2>
+          <p class="text-lg text-gray-100 max-w-xl leading-relaxed mb-8">
+            I am passionate about building technology-driven solutions that
+            create real-world impact. My main areas of focus are web
+            development, data-driven applications, and exploring artificial
+            intelligence. I enjoy solving problems, learning new technologies,
+            and collaborating with others to create meaningful projects.
+          </p>
+          <div class="flex gap-4 max-sm:flex-col">
+            <a
+              href="#contact"
+              class="btn-gradient rounded-xl px-8 py-4 text-white font-semibold text-center"
+            >
+              Get in Touch
+            </a>
+            <a
+              href="#projects"
+              class="rounded-xl border-2 border-white px-8 py-4 hover:bg-white hover:text-gray-900 transition-all font-semibold text-center"
+            >
+              View Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="flex w-full max-w-md justify-center items-center">
+          <div class="relative">
+            <img
+              src="./assets/images/people/keshwin.jpeg"
+              alt="Suresh Keshwin"
+              class="h-80 w-80 lg:h-96 lg:w-96 rounded-3xl object-cover shadow-2xl border-4 border-white/20"
+            />
+            <div
+              class="absolute -top-6 -right-6 w-16 h-16 bg-green-300 rounded-full opacity-80"
+            ></div>
+            <div
+              class="absolute -bottom-6 -left-6 w-12 h-12 bg-white rounded-full opacity-60"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="py-20 px-8 lg:px-16 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            About Me
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-lg leading-relaxed text-gray-700 mb-6">
+              I am an undergraduate in Computing and Information Systems,
+              currently exploring different domains of computer science
+              including software engineering, databases, artificial
+              intelligence, and cybersecurity.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700">
+              My goal is to become a full-stack developer and contribute to
+              open-source projects while also working on innovative solutions
+              that solve local and global challenges.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div
+              class="text-center p-8 rounded-2xl bg-gray-50 hover:bg-green-50 transition-colors hover-lift"
+            >
+              <div class="text-4xl font-bold text-green-600 mb-2">3+</div>
+              <div class="text-gray-600 font-medium">Years Learning</div>
+            </div>
+            <div
+              class="text-center p-8 rounded-2xl bg-gray-50 hover:bg-green-50 transition-colors hover-lift"
+            >
+              <div class="text-4xl font-bold text-green-600 mb-2">10+</div>
+              <div class="text-gray-600 font-medium">Projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="py-20 px-8 lg:px-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Skills
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <ul
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-lg"
+        >
+          <li
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">🌐</span>
+              <span class="font-semibold text-gray-800"
+                >Frontend Development</span
+              >
+            </div>
+            <div class="space-y-2 text-gray-600">
+              <div class="flex items-center gap-2">
+                <span class="text-green-500">✅</span> HTML, CSS, JavaScript
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">⚛️</span>
+              <span class="font-semibold text-gray-800">Modern Frameworks</span>
+            </div>
+            <div class="space-y-2 text-gray-600">
+              <div class="flex items-center gap-2">
+                <span class="text-green-500">✅</span> React, Next.js
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">⚙️</span>
+              <span class="font-semibold text-gray-800"
+                >Backend Development</span
+              >
+            </div>
+            <div class="space-y-2 text-gray-600">
+              <div class="flex items-center gap-2">
+                <span class="text-green-500">✅</span> Node.js & Express
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">🗄️</span>
+              <span class="font-semibold text-gray-800">Databases</span>
+            </div>
+            <div class="space-y-2 text-gray-600">
+              <div class="flex items-center gap-2">
+                <span class="text-green-500">✅</span> MySQL, MongoDB
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">🔧</span>
+              <span class="font-semibold text-gray-800">Development Tools</span>
+            </div>
+            <div class="space-y-2 text-gray-600">
+              <div class="flex items-center gap-2">
+                <span class="text-green-500">✅</span> Git & GitHub
+              </div>
+            </div>
+          </li>
+
+          <li
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <span class="text-2xl">🧠</span>
+              <span class="font-semibold text-gray-800">Problem Solving</span>
+            </div>
+            <div class="space-y-2 text-gray-600">
+              <div class="flex items-center gap-2">
+                <span class="text-green-500">✅</span> Algorithms & Data
+                Structures
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="py-20 px-8 lg:px-16 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Projects
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="rounded-2xl border border-gray-200 p-8 shadow-lg bg-white hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mb-4"
+              >
+                <span class="text-2xl text-white">🌐</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                Portfolio Website
+              </h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              A personal portfolio website to showcase my skills and projects.
+              Built with HTML, CSS, and Tailwind with modern responsive design.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+                >HTML</span
+              >
+              <span
+                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+                >CSS</span
+              >
+              <span
+                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium"
+                >Tailwind</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="rounded-2xl border border-gray-200 p-8 shadow-lg bg-white hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mb-4"
+              >
+                <span class="text-2xl text-white">🛒</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">
+                E-commerce Store
+              </h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              A small-scale e-commerce platform built with React, Node.js, and
+              MongoDB to demonstrate full-stack development capabilities.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >React</span
+              >
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >Node.js</span
+              >
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                >MongoDB</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="rounded-2xl border border-gray-200 p-8 shadow-lg bg-white hover:shadow-xl transition-all hover-lift"
+          >
+            <div class="mb-6">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mb-4"
+              >
+                <span class="text-2xl text-white">🤖</span>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">AI Chatbot</h3>
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              A simple chatbot application using Python and NLP libraries to
+              provide answers for frequently asked questions with intelligent
+              responses.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium"
+                >Python</span
+              >
+              <span
+                class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium"
+                >NLP</span
+              >
+              <span
+                class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium"
+                >AI</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="py-20 px-8 lg:px-16 bg-gray-50">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Contact Me
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto rounded-full"
+          ></div>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-xl p-12 text-center">
+          <div class="text-6xl mb-6">📩</div>
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">
+            Let's Work Together
+          </h3>
+          <p
+            class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed"
+          >
+            I'd love to connect with you. Feel free to reach out via email or
+            through my social links for any collaboration opportunities.
+          </p>
+          <a
+            href="mailto:suresh.keshwin@example.com"
+            class="btn-gradient rounded-xl px-8 py-4 text-white font-semibold inline-flex items-center gap-2"
+          >
+            📧 Email Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer
+      class="mt-auto flex min-h-20 w-full justify-center gap-8 bg-gray-900 p-8 text-white"
+    >
+      <div
+        class="flex flex-col items-center gap-6 max-w-4xl mx-auto text-center"
+      >
+        <div class="flex gap-8">
+          <a
+            href="https://github.com/Suresh-Keshwin"
+            aria-label="Github"
+            class="text-3xl hover:text-green-400 transition-colors"
+          >
+            🐙
+          </a>
+          <a
+            href="https://twitter.com/"
+            aria-label="Twitter"
+            class="text-3xl hover:text-green-400 transition-colors"
+          >
+            🐦
+          </a>
+          <a
+            href="https://linkedin.com/in/"
+            aria-label="LinkedIn"
+            class="text-3xl hover:text-green-400 transition-colors"
+          >
+            💼
+          </a>
+        </div>
+        <div class="text-gray-400">
+          <p>&copy; 2024 Suresh Keshwin. Built with passion and code.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
